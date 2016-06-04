@@ -6,7 +6,7 @@ class PoorDog{
 		return size;
 	}
 
-	public Stirng getName(){
+	public String getName(){
 		return name;
 	}
 }
