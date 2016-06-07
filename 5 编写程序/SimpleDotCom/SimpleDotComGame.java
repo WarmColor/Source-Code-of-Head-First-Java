@@ -12,11 +12,11 @@ class SimpleDotComGame{
 
 		while(isAlive == true){
 			String guess = helper.getUserInput("enter a number");
-			String result =  theDotCom.checkYourSelf(guess);
+			String result =  theDotCom.checkYourself(guess);
 			numOfGuesses++;
 			if(result.equals("kill")){
 				isAlive = false;
-				System.out.println("You took " + numOfGuesses + "guess");
+				System.out.println("You took " + numOfGuesses + " guess");
 			} // close if
 		} // close while
 	} // close main
