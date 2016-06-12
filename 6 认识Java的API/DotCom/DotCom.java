@@ -21,10 +21,11 @@ public class DotCom{
 
 			if(locationCells.isEmpty){
 				result = "kill";
+				System.out.println("Ouch! You Sunk " + name + " :(");
 			}else{
 				result = "hit";
-			}
-		}
+			} //close if
+		} //close if
 		return result;
-	}
-}
+	} //close method
+} //close class
