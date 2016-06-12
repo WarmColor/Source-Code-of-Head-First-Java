@@ -1,10 +1,15 @@
-import java.util.ArrayList;
+import java.util.*;
 
-public classDotCom{
+public class DotCom{
 	private ArrayList<String> locationCells;
+	private String name;
 
 	public void setLocationCells(ArrayList<String> loc){
 		locatonCells = loc;
+	}
+
+	public void setName(String n){
+		name = n;
 	}
 
 	public String checkYourself(String userInput){
