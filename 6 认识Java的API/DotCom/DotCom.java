@@ -5,7 +5,7 @@ public class DotCom{
 	private String name;
 
 	public void setLocationCells(ArrayList<String> loc){
-		locatonCells = loc;
+		locationCells = loc;
 	}
 
 	public void setName(String n){
@@ -19,7 +19,7 @@ public class DotCom{
 		if(index >= 0){
 			locationCells.remove(index);
 
-			if(locationCells.isEmpty){
+			if(locationCells.isEmpty()){
 				result = "kill";
 				System.out.println("Ouch! You Sunk " + name + " :(");
 			}else{

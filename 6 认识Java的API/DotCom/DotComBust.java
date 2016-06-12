@@ -16,9 +16,9 @@ public class DotComBust{
 		DotCom three = new DotCom();
 		three.setName("Go2.com");
 
-		dotComList.add(one);
-		dotComList.add(two);
-		dotComList.add(three);
+		dotComsList.add(one);
+		dotComsList.add(two);
+		dotComsList.add(three);
 
 		System.out.println("Your goal is to sink three dot coms.");
 		System.out.println("Pets.com, sToys.com, Go2.com");
@@ -31,7 +31,7 @@ public class DotComBust{
 	} //close setUpGame method
 
 	private void startPlaying(){
-		while(!dotcomsList.isEmpty){
+		while(!dotComsList.isEmpty()){
 			String userGuess = helper.getUserInput("Enter a guess");
 			checkUserGuess(userGuess);
 		} //cloes while
@@ -43,24 +43,24 @@ public class DotComBust{
 		String result = "miss";
 		for(DotCom dotComToSet : dotComsList){
 			result = dotComToSet.checkYourself(userGuess);
-			if(result.equal("hit")){
+			if(result.equals("hit")){
 				break;
 			}
 			if(result.equals("kill")){
 				dotComsList.remove(dotComToSet);
 				break;
 			}
-			System.out.println(result);
 		} //close for
+		System.out.println(result);
 	}
 
 	private void finishGame(){
 		System.out.println("All Dot Coms are dead! Your stock is now worthless.");
-		if(numOfGuess <= 8){
+		if(numOfGuesses <= 8){
 			System.out.println("It only you " + numOfGuesses + " guesses.");
 			System.out.println("You got out before your option sanl.");
 		}else{
-			System.out.println("Tool you long enough. " + numOfGuesses + " guesses.");
+			System.out.println("TooK you long enough. " + numOfGuesses + " guesses.");
 			System.out.println("Fish are dancing with your options"); 
 		} 
 	} //close method
