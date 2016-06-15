@@ -10,6 +10,6 @@ class A{
 	}
 
 	void m3(){
-		System.out.print("A's m3, ");
+		System.out.println("A's m3, ");
 	}
 }
