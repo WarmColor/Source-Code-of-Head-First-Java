@@ -4,6 +4,7 @@ public class Test2 {
 		ArrayList listOfNumbers = new ArrayList();
 		listOfNumbers.add(new Integer(3));
 		System.out.println(listOfNumbers.get(0).getClass());
+		System.out.println(listOfNumbers.get(0).getClass().getClass());
 	}
 }
 //javac Test2.java -Xlint:unchecked
