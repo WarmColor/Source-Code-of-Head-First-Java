@@ -1,9 +1,9 @@
 class StaticSuper {
 	static {
-		System.out.println("Super static block");
+		System.out.println("super static block");
 	}
 
-	StaticSuper {
+	StaticSuper() {
 		System.out.println("super constructor");
 	}
 }
